@@ -12,6 +12,7 @@
 
 #include "push_swap.h"
 
+//we are pushing all the numbers except 3 to stack b not randomly but based on the index (if it smaller than stack size / 2 which means smaller gets pushed first )
 static void	push_rest(t_stack **stack_a, t_stack **stack_b)
 {
 	int	stack_size;
@@ -39,6 +40,8 @@ static void	push_rest(t_stack **stack_a, t_stack **stack_b)
 	}
 }
 
+//gets a sorted stack
+
 static void	arrange_stack(t_stack **stack_a)
 {
 	int	lowest_idx_pos;
@@ -63,6 +66,10 @@ static void	arrange_stack(t_stack **stack_a)
 		}
 	}
 }
+
+// push first sort 3
+// then we keep calculating the cost of moving each node to the top of stack a and stack b, then we move the one with the least cost, we repeat this until stack b is empty, 
+// then we do some final rotations to make sure stack a is sorted
 
 void	sort(t_stack **stack_a, t_stack **stack_b)
 {

@@ -12,6 +12,9 @@
 
 #include "push_swap.h"
 
+// if lesser than 3 we just swap both value
+// if 3 we just hardcode the solution
+// if more than 3 we do our greedy algorithm, we calculate the cost of moving each node to the top of stack a and stack b, then we move the one with the least cost, we repeat this until stack b is empty, then we do some final rotations to make sure stack a is sorted
 static void	push_swap(t_stack **stack_a, t_stack **stack_b, int stack_size)
 {
 	if (stack_size == 2 && is_sorted(*stack_a))

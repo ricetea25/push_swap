@@ -17,6 +17,7 @@ int	is_sign(char c)
 	return (c >= '+' && c <= '-');
 }
 
+//check if its a number or just some random chars/signs
 static int	arg_is_number(char *av)
 {
 	int	i;
@@ -61,6 +62,8 @@ static int	have_duplicates(char **av)
 	return (0);
 }
 
+//checks if input is valid, valid: 0 invalid: -1
+//alo recording how many zeroes there are, important cause we can check if the stack is sorted later
 int	is_correct_input(char **av)
 {
 	int			i;

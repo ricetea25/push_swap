@@ -26,6 +26,8 @@ static int	find_highest_index(t_stack *stack)
 	return (index);
 }
 
+//hardcode solution for 3 numbers
+
 void	tiny_sort(t_stack **stack)
 {
 	int	highest;

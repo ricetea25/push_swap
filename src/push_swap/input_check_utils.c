@@ -34,6 +34,7 @@ int	arg_cmp(char *s1, char *s2)
 	return ((unsigned char)s1[i] - (unsigned char)s2[j]);
 }
 
+//take one long string from input and split it into multiple strings, then return the array of strings 
 char	**make_input(char **av)
 {
 	char	*str;

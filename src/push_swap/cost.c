@@ -19,6 +19,7 @@ static int	nb_conv(int nb)
 	return (nb);
 }
 
+//finding the number of moves it would take to move each node to where it should be based on the index and the nodes current position
 void	calculate_cost(t_stack **stack_a, t_stack **stack_b)
 {
 	t_stack	*tmp_a;
@@ -42,6 +43,7 @@ void	calculate_cost(t_stack **stack_a, t_stack **stack_b)
 	}
 }
 
+//finding the node with the least cost and move it to where it should be
 void	do_optimal_move(t_stack **stack_a, t_stack **stack_b)
 {
 	t_stack	*tmp;

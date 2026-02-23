@@ -67,6 +67,7 @@ int	get_lowest_index_pos(t_stack **stack)
 	return (pos);
 }
 
+//find next closest index in stack a for each node in stack b
 static int	get_target(t_stack **a, int b_idx)
 {
 	int		target_idx;
@@ -91,6 +92,7 @@ static int	get_target(t_stack **a, int b_idx)
 	return (target_pos);
 }
 
+//going through each node in stack b and giving it a target position to calculate cost
 void	get_target_position(t_stack **a, t_stack **b)
 {
 	t_stack	*tmp_b;

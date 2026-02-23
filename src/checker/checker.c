@@ -49,6 +49,7 @@ static int	exe_com(const char *line, t_stack **stack_a, t_stack **stack_b)
 	return (0);
 }
 
+//basically just takes the instructions i received from my push_swap and does the moving operator, and if the stack is sorted it would print OK if not it would print KO, and if there is an error in the instruction it would print error.
 int	main(int ac, char **av)
 {
 	t_stack	*stack_a;

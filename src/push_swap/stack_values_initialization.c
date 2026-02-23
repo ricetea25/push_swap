@@ -12,6 +12,8 @@
 
 #include "push_swap.h"
 
+//we are using nodes to create a stack, we filling each node with a number from input
+
 t_stack	*fill_stack_values(int ac, char **av)
 {
 	t_stack		*stack_a;
@@ -39,6 +41,7 @@ t_stack	*fill_stack_values(int ac, char **av)
 	return (stack_a);
 }
 
+//assigning index to where it should be in the sorted stack
 void	assign_index(t_stack *stack_a, int i)
 {
 	t_stack	*ptr;

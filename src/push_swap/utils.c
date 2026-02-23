@@ -12,6 +12,7 @@
 
 #include "push_swap.h"
 
+//get the siz of stack
 int	get_stack_size(t_stack *stack)
 {
 	int	size;
